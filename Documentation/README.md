@@ -2,14 +2,14 @@
 
 <center>
 <p style="font-family:Sulphur Point; font-size:7em;">Rising Waters</p>  
-<p style="font-family:Sulphur Point; font-size:3em;">Game Design Document.</p>
+<p style="font-family:Sulphur Point; font-size:3em;">Game Design Document</p>
 </center>
 
 </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>  
 
 __by:__  
 Afonso Lage - 21901381  
-André Santos - 21901767    
+André Santos - 21901767  
 Rui Vilar - 21902960
 
 <div style="page-break-after: always;"></div>
@@ -44,9 +44,9 @@ You get to your room and start to rest when suddenly you feel the ship shaking a
 ### __First Half of the game__
 
 - __Jump__ -> [W], [Up Key] or [Space];
-- __Slide__ -> [S] or [Down Key]  
+- __Crouch__ -> [S] or [Down Key]  
 </br>
-In this part of the game the player is running through the hallways in order to escape the water. He has to jump or slide to avoid the obstacles he faces otherwise he will slow down and get consumed by the wave of water behind him. As the player goes up the stairs onto the next hallway the ship's leaning gets progressively wider.
+In this part of the game the player is running through the hallways in order to escape the water. He has to jump or crouch to avoid the obstacles he faces otherwise he will slow down and get consumed by the wave of water behind him. As the player goes up the stairs onto the next hallway the ship's leaning gets progressively wider.
   
 ### __Second Half of the game__
 
