@@ -8,14 +8,14 @@
 |03        |Sistema de pontuação   |""                     |Obstáculos             |
 |04        |Definição de Assets    |""                     |                       |
 |05        |Som e música           |Água C1                |Programação Água       |
-|06        |                       |Água C2                |                       |
-|07        |                       |Objetos                |                       |
+|06        |         ""            |Água C2                |                       |
+|07        |Testing                |Objetos                |                       |
 |08 (Slice)|Balanceamento          |Finishers              |                       |
-|09        |                       |Menus                  |                       |
-|10        |                       |""                     |                       |
-|11        |                       |Logótipo               |                       |
-|12        |                       |Finishers              |                       |
-|13 (Final)|                       |""                     |                       |
+|09        |Definição de menus     |Menus                  |                       |
+|10        |Testing                |""                     |                       |
+|11        |Balanceamento          |Logótipo               |                       |
+|12        |Testing                |Finishers              |                       |
+|13 (Final)|Balanceamento          |""                     |                       |
 
 </br>
 
