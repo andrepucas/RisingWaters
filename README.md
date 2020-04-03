@@ -1,35 +1,28 @@
+# Rising Waters
 
-
-# Rising Waters   
-# Game Design Document
-
-
-
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>  
+## Game Design Document  
 
 __by:__  
 Afonso Lage - 21901381  
 André Santos - 21901767  
 Rui Vilar - 21902960
 
-<div style="page-break-after: always;"></div>
-
 ## __Table of Contents__
 
-- [__Table of Contents__](#table-of-contents)
-- [__Movie Synopsis__](#movie-synopsis)
-- [__What We Want Out of The Movie__](#what-we-want-out-of-the-movie)
-- [__History__](#history)
-- [__Mechanics__](#mechanics)
-  - [__First Half of the game__](#first-half-of-the-game)
-  - [__Second Half of the game__](#second-half-of-the-game)
-- [__Game Objectives__](#game-objectives)
-- [__Game "World"__](#game-%22world%22)
-- [__Game Agents__](#game-agents)
-- [__Types of Obstacles__](#types-of-obstacles)
-- [__Means of Storytelling__](#means-of-storytelling)
-
-<div style="page-break-after: always;"></div>
+- [Rising Waters](#rising-waters)
+  - [Game Design Document](#game-design-document)
+  - [__Table of Contents__](#table-of-contents)
+  - [__Movie Synopsis__](#movie-synopsis)
+  - [__What We Want Out of The Movie__](#what-we-want-out-of-the-movie)
+  - [__History__](#history)
+  - [__Mechanics__](#mechanics)
+    - [__First Half of the game__](#first-half-of-the-game)
+    - [__Second Half of the game__](#second-half-of-the-game)
+  - [__Game Objectives__](#game-objectives)
+  - [__Game "World"__](#game-%22world%22)
+  - [__Game Agents__](#game-agents)
+  - [__Types of Obstacles__](#types-of-obstacles)
+  - [__Means of Storytelling__](#means-of-storytelling)
 
 ## __Movie Synopsis__
 
