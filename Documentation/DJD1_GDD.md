@@ -18,6 +18,7 @@ Rui Vilar - 21902960
 
 - [__Table of Contents__](#table-of-contents)
 - [__Movie Synopsis__](#movie-synopsis)
+- [__What We Want Out of The Movie__](#what-we-want-out-of-the-movie)
 - [__History__](#history)
 - [__Mechanics__](#mechanics)
   - [__First Half of the game__](#first-half-of-the-game)
@@ -25,13 +26,18 @@ Rui Vilar - 21902960
 - [__Game Objectives__](#game-objectives)
 - [__Game "World"__](#game-%22world%22)
 - [__Game Agents__](#game-agents)
+- [__Types of Obstacles__](#types-of-obstacles)
 - [__Means of Storytelling__](#means-of-storytelling)
 
 <div style="page-break-after: always;"></div>
 
 ## __Movie Synopsis__
 
-A poor artist and a young rich woman meet and fall in love while in the Titanic. Although she is married to a soon to be successful business owner, she defies her family and friends in search of the one true love.
+A poor artist and a young rich woman meet and fall in love while in the Titanic. Although she is married to a soon to be successful business owner, she defies her family and friends in search of the one true love.  
+
+## __What We Want Out of The Movie__
+
+In this project we are going to focus on the second part of the movie. We are going to focus on the part when the ship is sinking and we'll try to capture that moment in our game.
 
 ## __History__
 
@@ -51,8 +57,9 @@ In this part of the game the player is running through the hallways in order to 
 ### __Second Half of the game__
 
 - __Move Left or Right__ -> [A] or [D], [Left Key] or [Right Key] ;  
+- __Jump__ -> [W], [Up Key] or [Space];  
 </br>
-In this second half of the game the player is on top of a table that is floating on the water. The player has to dodge falling debris and avoid getting stuck in order to escape the ship alive.
+In this second half of the game the player is on top of a table that is floating on the water. The player has to dodge falling debris and use them to stay floating. Each time a debris fall on the water it only floats for a limited time (the starting door included). This way he will be able to stay a float.
 
 ## __Game Objectives__  
 
@@ -61,9 +68,9 @@ In this second half of the game the player is on top of a table that is floating
 
 ## __Game "World"__
 
-During the **first half** of the game Arthur is running through hallways trying to escape the water that is flooding the ship. Then he gets hit with a table in the face and is knocked unconscious.
+During the **first half** of the game Arthur is running through hallways trying to escape the water that is flooding the ship. Then he gets hit with a table in the face and is knocked unconscious.  
 </br>
-During the **second half** he wakes up on top of a table floating on the water, the ship now is fully sideways and the water is quickly rising. Arthur uses a stick he finds by his side to navigate through ship avoiding debris and getting stuck.
+During the **second half** he wakes up on top of a table floating on the water, the ship now is fully sideways and the water is quickly rising. Arthur uses the falling debris to stay on top of the water and to try to escape from the ship.
 
 ## __Game Agents__
 
@@ -76,6 +83,14 @@ During the **second half** he wakes up on top of a table floating on the water, 
 - __The Water__ -> The player has to avoid getting overtaken by the water at all costs otherwise he will drown.
   
 - __The table and Stick__ -> This is what the player uses to be able to be on top of the water and get to the other side of the ship.
+  
+## __Types of Obstacles__
+
+- __Table__ -> To pass this obstacle the player has to crawl under or jump over.
+
+- __Room-cleaning cart__ -> To pass this object the player has to jump over the cart.
+
+- __Broken Lamp__ -> To pass this obstacle the player has to crawl under this lamp
 
 ## __Means of Storytelling__
 
