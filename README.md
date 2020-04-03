@@ -1,9 +1,9 @@
-</br></br></br></br></br></br>
 
-<center>
-<p style="font-family:Sulphur Point; font-size:7em;">Rising Waters</p>  
-<p style="font-family:Sulphur Point; font-size:3em;">Game Design Document</p>
-</center>
+
+# Rising Waters   
+# Game Design Document
+
+
 
 </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>  
 
