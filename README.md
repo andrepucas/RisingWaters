@@ -131,12 +131,12 @@ In this game we will use cutscenes for when the player isn't controlling our
 For the initial cutscene we will have Arthur leave the room then the water
  rushes in through the hallway and he starts running.
 
-![Initial Cutscene](\Art/Concepts/Intro/Intro.gif "Initial Cutscene")
+![Initial Cutscene](https://media.githubusercontent.com/media/andrepucas/RisingWaters/master/Art/Concepts/Intro/Intro.gif "Initial Cutscene")
 
 ### __Hallway__
 
-This is the hallway that we are going to put on loop for the first part of the 
-game. Has the player goes through the lights behind him turn off due to a
+This is the hallway that we are going to put on loop for the first part of the
+ game. Has the player goes through the lights behind him turn off due to a
 power failure.
 
-![Hallway](Art\Game\Hallway\going_dark.gif)
+![Hallway](https://media.githubusercontent.com/media/andrepucas/RisingWaters/master/Art/Game/Hallway/going_dark.gif "Hallway")
