@@ -10,6 +10,11 @@ public class PlayerController : MonoBehaviour
     // Determinates the max speed of the Player
     public float moveSpeed;
 
+    // Variables to make the player go faster
+    public float speedMultiplier;
+    public float speedIncreaseMilestone;
+    private float speedMilestoneCount;
+
     // Determinates the force of your jump in the Y axis
     public float jumpForce;
 
@@ -17,40 +22,43 @@ public class PlayerController : MonoBehaviour
     public LayerMask whatIsGround;
     public bool isGrounded;
 
-
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         collider = GetComponent<BoxCollider2D>();
+
+        speedMilestoneCount = speedIncreaseMilestone;
     }
 
     private void Update()
     {
+        isGrounded = Physics2D.IsTouchingLayers(collider, whatIsGround);
+
+        // Jump movement
         rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
 
-        if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        // Jump movement inputs
+        if(Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            if (isGrounded)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            }          
         }
 
-    }
-
-    //player is touching the ground
-    private void OnCollisionStay2D(Collision2D other)
-    {
-        if (other.collider.tag == "Ground")
+        // Increases movement mpeed
+        if(transform.position.x > speedMilestoneCount)
         {
-            isGrounded = true;
-        }
-    }
+            // Increases the count speed
+            speedMilestoneCount += speedIncreaseMilestone;
 
-    //player is in the air
-    private void OnCollisionExit2D(Collision2D other)
-    {
-        if (other.collider.tag != "Ground")
-        {
-            isGrounded = false;
+            // This makes the Milestones larger as the player moves faster
+            speedIncreaseMilestone = speedIncreaseMilestone * speedMultiplier;
+
+            // Increases the moveSpeed variable
+            moveSpeed = moveSpeed * speedMultiplier;
         }
+
     }
 }
