@@ -431,6 +431,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_lamp (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 6621539580630088900, guid: d467c3efca7de844984be54cbfd9fe64,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467c3efca7de844984be54cbfd9fe64, type: 3}
 --- !u!1 &29893288
@@ -656,6 +661,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_table_static
+      objectReference: {fileID: 0}
+    - target: {fileID: 5461459653732255216, guid: 268ec6057b13b6440843ed282158a53a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 268ec6057b13b6440843ed282158a53a, type: 3}
@@ -906,6 +916,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_box_static
       objectReference: {fileID: 0}
+    - target: {fileID: 8214262674635130962, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450fb131b7cd3e54b9a188b5cfa9f75a, type: 3}
 --- !u!1001 &172959552
@@ -974,6 +989,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_lamp (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6621539580630088900, guid: d467c3efca7de844984be54cbfd9fe64,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467c3efca7de844984be54cbfd9fe64, type: 3}
@@ -1217,6 +1237,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_lamp (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6621539580630088900, guid: d467c3efca7de844984be54cbfd9fe64,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467c3efca7de844984be54cbfd9fe64, type: 3}
@@ -2028,6 +2053,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_box_static (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8214262674635130962, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450fb131b7cd3e54b9a188b5cfa9f75a, type: 3}
 --- !u!1001 &473754133
@@ -2345,6 +2375,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_box_static (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214262674635130962, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450fb131b7cd3e54b9a188b5cfa9f75a, type: 3}
@@ -2757,6 +2792,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_lamp (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6621539580630088900, guid: d467c3efca7de844984be54cbfd9fe64,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467c3efca7de844984be54cbfd9fe64, type: 3}
 --- !u!4 &593432171 stripped
@@ -2832,6 +2872,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_lamp (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 6621539580630088900, guid: d467c3efca7de844984be54cbfd9fe64,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467c3efca7de844984be54cbfd9fe64, type: 3}
 --- !u!4 &598737080 stripped
@@ -2906,6 +2951,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_box_static
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214262674635130962, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450fb131b7cd3e54b9a188b5cfa9f75a, type: 3}
@@ -3138,6 +3188,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_box_static (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8214262674635130962, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450fb131b7cd3e54b9a188b5cfa9f75a, type: 3}
 --- !u!4 &647118910 stripped
@@ -3212,6 +3267,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_lamp (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6621539580630088900, guid: d467c3efca7de844984be54cbfd9fe64,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467c3efca7de844984be54cbfd9fe64, type: 3}
@@ -3474,6 +3534,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_lamp (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6621539580630088900, guid: d467c3efca7de844984be54cbfd9fe64,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467c3efca7de844984be54cbfd9fe64, type: 3}
 --- !u!4 &779281294 stripped
@@ -3636,6 +3701,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_lamp
       objectReference: {fileID: 0}
+    - target: {fileID: 6621539580630088900, guid: d467c3efca7de844984be54cbfd9fe64,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467c3efca7de844984be54cbfd9fe64, type: 3}
 --- !u!1001 &824606164
@@ -3705,6 +3775,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_lamp (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6621539580630088900, guid: d467c3efca7de844984be54cbfd9fe64,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467c3efca7de844984be54cbfd9fe64, type: 3}
 --- !u!1001 &831317519
@@ -3773,6 +3848,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_lamp (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6621539580630088900, guid: d467c3efca7de844984be54cbfd9fe64,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467c3efca7de844984be54cbfd9fe64, type: 3}
@@ -4074,6 +4154,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_box_static (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8214262674635130962, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450fb131b7cd3e54b9a188b5cfa9f75a, type: 3}
 --- !u!1001 &910000705
@@ -4142,6 +4227,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_box_static (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214262674635130962, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450fb131b7cd3e54b9a188b5cfa9f75a, type: 3}
@@ -4217,6 +4307,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_lamp (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6621539580630088900, guid: d467c3efca7de844984be54cbfd9fe64,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467c3efca7de844984be54cbfd9fe64, type: 3}
@@ -4368,6 +4463,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_box_static (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8214262674635130962, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450fb131b7cd3e54b9a188b5cfa9f75a, type: 3}
 --- !u!4 &945252666 stripped
@@ -4442,6 +4542,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_table_static
+      objectReference: {fileID: 0}
+    - target: {fileID: 5461459653732255216, guid: 268ec6057b13b6440843ed282158a53a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 268ec6057b13b6440843ed282158a53a, type: 3}
@@ -4598,6 +4703,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_box_static (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214262674635130962, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450fb131b7cd3e54b9a188b5cfa9f75a, type: 3}
@@ -4998,6 +5108,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_lamp (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 6621539580630088900, guid: d467c3efca7de844984be54cbfd9fe64,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467c3efca7de844984be54cbfd9fe64, type: 3}
 --- !u!1001 &1104924364
@@ -5397,6 +5512,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_box_static (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8214262674635130962, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450fb131b7cd3e54b9a188b5cfa9f75a, type: 3}
 --- !u!4 &1137049373 stripped
@@ -5471,6 +5591,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_lamp (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6621539580630088900, guid: d467c3efca7de844984be54cbfd9fe64,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467c3efca7de844984be54cbfd9fe64, type: 3}
@@ -5709,6 +5834,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_lamp (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6621539580630088900, guid: d467c3efca7de844984be54cbfd9fe64,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467c3efca7de844984be54cbfd9fe64, type: 3}
 --- !u!4 &1194373954 stripped
@@ -5790,6 +5920,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_table_static (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5461459653732255216, guid: 268ec6057b13b6440843ed282158a53a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 268ec6057b13b6440843ed282158a53a, type: 3}
 --- !u!1 &1210538090
@@ -5805,7 +5940,7 @@ GameObject:
   - component: {fileID: 1210538091}
   m_Layer: 0
   m_Name: Wave
-  m_TagString: Untagged
+  m_TagString: Wave
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5874,7 +6009,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 6bbfbf2ce9cf12f43bd58fc26b59be36, type: 3}
   m_Color: {r: 0.25938946, g: 0.5683824, b: 0.6320754, a: 1}
   m_FlipX: 0
@@ -5894,7 +6029,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210538090}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -164.6, y: -10.53, z: 10}
+  m_LocalPosition: {x: -157.4, y: -10.5, z: 10}
   m_LocalScale: {x: 8.861462, y: 13.715794, z: 1}
   m_Children: []
   m_Father: {fileID: 1614655494}
@@ -6044,9 +6179,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 150
-  speedMultiplier: 1.00015
+  speedInitial: 150
   speedTerminal: 200
-  speedDecrease: 50
+  speedMultiplier: 1.00015
   jumpForce: 170
   whatIsGround:
     serializedVersion: 2
@@ -6282,6 +6417,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_table_static (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5461459653732255216, guid: 268ec6057b13b6440843ed282158a53a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 268ec6057b13b6440843ed282158a53a, type: 3}
 --- !u!1001 &1326080708
@@ -6351,6 +6491,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_box_static (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8214262674635130962, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450fb131b7cd3e54b9a188b5cfa9f75a, type: 3}
 --- !u!1001 &1380957289
@@ -6419,6 +6564,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_box_static
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214262674635130962, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450fb131b7cd3e54b9a188b5cfa9f75a, type: 3}
@@ -6500,6 +6650,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_lamp (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6621539580630088900, guid: d467c3efca7de844984be54cbfd9fe64,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467c3efca7de844984be54cbfd9fe64, type: 3}
@@ -6966,6 +7121,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_lamp (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 6621539580630088900, guid: d467c3efca7de844984be54cbfd9fe64,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467c3efca7de844984be54cbfd9fe64, type: 3}
 --- !u!4 &1563159295 stripped
@@ -7215,6 +7375,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_table_static (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5461459653732255216, guid: 268ec6057b13b6440843ed282158a53a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 268ec6057b13b6440843ed282158a53a, type: 3}
 --- !u!4 &1595102675 stripped
@@ -7320,7 +7485,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4e791c4331652d44ac1b9128d04857f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceDecreased: 1
 --- !u!4 &1617553315 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6389466500701107055, guid: d467c3efca7de844984be54cbfd9fe64,
@@ -7393,6 +7557,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_lamp (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6621539580630088900, guid: d467c3efca7de844984be54cbfd9fe64,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467c3efca7de844984be54cbfd9fe64, type: 3}
@@ -7474,6 +7643,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_box_static (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214262674635130962, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450fb131b7cd3e54b9a188b5cfa9f75a, type: 3}
@@ -7730,6 +7904,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_table_static
       objectReference: {fileID: 0}
+    - target: {fileID: 5461459653732255216, guid: 268ec6057b13b6440843ed282158a53a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 268ec6057b13b6440843ed282158a53a, type: 3}
 --- !u!4 &1721402778 stripped
@@ -7810,6 +7989,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_box_static (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214262674635130962, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450fb131b7cd3e54b9a188b5cfa9f75a, type: 3}
@@ -8135,6 +8319,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_box_static
       objectReference: {fileID: 0}
+    - target: {fileID: 8214262674635130962, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450fb131b7cd3e54b9a188b5cfa9f75a, type: 3}
 --- !u!1001 &1865912317
@@ -8203,6 +8392,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_box_static (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214262674635130962, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450fb131b7cd3e54b9a188b5cfa9f75a, type: 3}
@@ -8278,6 +8472,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_table_static (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5461459653732255216, guid: 268ec6057b13b6440843ed282158a53a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 268ec6057b13b6440843ed282158a53a, type: 3}
@@ -8434,6 +8633,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_lamp (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6621539580630088900, guid: d467c3efca7de844984be54cbfd9fe64,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d467c3efca7de844984be54cbfd9fe64, type: 3}
@@ -8759,6 +8963,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: wire_box_static
       objectReference: {fileID: 0}
+    - target: {fileID: 8214262674635130962, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450fb131b7cd3e54b9a188b5cfa9f75a, type: 3}
 --- !u!4 &2048850743 stripped
@@ -8777,7 +8986,7 @@ PrefabInstance:
     - target: {fileID: 4264371293882567253, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 69.3
+      value: 79.7
       objectReference: {fileID: 0}
     - target: {fileID: 4264371293882567253, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
         type: 3}
@@ -8833,6 +9042,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_box_static (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8214262674635130962, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 450fb131b7cd3e54b9a188b5cfa9f75a, type: 3}
@@ -8902,6 +9116,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_table_static (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5461459653732255216, guid: 268ec6057b13b6440843ed282158a53a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 268ec6057b13b6440843ed282158a53a, type: 3}
@@ -9045,6 +9264,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: wire_table_static
+      objectReference: {fileID: 0}
+    - target: {fileID: 5461459653732255216, guid: 268ec6057b13b6440843ed282158a53a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Obstacle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 268ec6057b13b6440843ed282158a53a, type: 3}
