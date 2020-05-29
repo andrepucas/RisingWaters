@@ -5340,7 +5340,7 @@ PrefabInstance:
     - target: {fileID: 4264371293882567253, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4267.6
+      value: 4272.9
       objectReference: {fileID: 0}
     - target: {fileID: 4264371293882567253, guid: 450fb131b7cd3e54b9a188b5cfa9f75a,
         type: 3}
@@ -6043,9 +6043,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c582f07fe5d85bb4fa42a0c3cd5c16c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 200
-  speedMultiplier: 1
-  speedIncreaseMilestone: 100
+  moveSpeed: 150
+  speedMultiplier: 1.00015
+  speedTerminal: 200
   speedDecrease: 50
   jumpForce: 170
   whatIsGround:

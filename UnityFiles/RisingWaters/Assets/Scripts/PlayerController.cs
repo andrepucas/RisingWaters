@@ -7,19 +7,17 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private BoxCollider2D collider;
     private SpriteRenderer renderer;
+    
 
-    // Determinates the max speed of the Player
+    // Speed Variables
+
     public float moveSpeed;
-
-    // Variables to make the player go faster
+    public float speedInitial;
+    public float speedTerminal;
     public float speedMultiplier;
-    public float speedIncreaseMilestone;
-    private float speedMilestoneCount;
-
-    public float speedDecrease;
 
 
-    // Determinates the force of your jump in the Y axis
+    // Determines the force of your jump in the Y axis
     public float jumpForce;
 
     // Variables to check if the player is grounded to prevent multiple jumpings
@@ -35,8 +33,6 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         collider = GetComponent<BoxCollider2D>();
         renderer = GetComponent<SpriteRenderer>();
-
-        speedMilestoneCount = speedIncreaseMilestone;
     }
 
     private void Update()
@@ -65,7 +61,6 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // THIS CODE WILL BE REMOVED
         // "Slide"
         if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
@@ -76,17 +71,21 @@ public class PlayerController : MonoBehaviour
             transform.Rotate(0.0f, 0.0f, 70f);
         }
 
-        // Increases movement mpeed
-        if (transform.position.x > speedMilestoneCount)
+        // Increases movement speed
+        if (moveSpeed < speedTerminal)
         {
-            // Increases the count speed
-            speedMilestoneCount += speedIncreaseMilestone;
-
-            // This makes the Milestones larger as the player moves faster
-            speedIncreaseMilestone = speedIncreaseMilestone * speedMultiplier;
-
             // Increases the moveSpeed variable
             moveSpeed = moveSpeed * speedMultiplier;
+        }
+
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Obstacle"))
+        {
+            // Player takes damage
+            moveSpeed = speedInitial;
+            Debug.Log("Slowed Down.");
         }
     }
 }
