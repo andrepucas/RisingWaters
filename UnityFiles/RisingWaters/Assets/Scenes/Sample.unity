@@ -6029,7 +6029,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210538090}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -157.4, y: -10.5, z: 10}
+  m_LocalPosition: {x: -159.4, y: -10.5, z: 10}
   m_LocalScale: {x: 8.861462, y: 13.715794, z: 1}
   m_Children: []
   m_Father: {fileID: 1614655494}
@@ -6181,7 +6181,7 @@ MonoBehaviour:
   moveSpeed: 150
   speedInitial: 150
   speedTerminal: 200
-  speedMultiplier: 1.00015
+  speedMultiplier: 1.0003
   jumpForce: 170
   whatIsGround:
     serializedVersion: 2

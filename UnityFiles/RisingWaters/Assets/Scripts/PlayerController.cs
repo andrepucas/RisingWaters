@@ -89,9 +89,10 @@ public class PlayerController : MonoBehaviour
         // Wave leaves screen
         if (moveSpeed == speedTerminal)
         {
-            wave.transform.position = wave.transform.position + new Vector3(-20f * 2 * Time.deltaTime, 0.0f, 0.0f);
+            wave.transform.position = wave.transform.position + new Vector3(-20f * Time.deltaTime, 0.0f, 0.0f);
         }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Obstacle"))
