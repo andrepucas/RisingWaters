@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObstacleController : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public float obstacleSpeed; 
+    public  float       obstacleSpeed; 
 
     // Start is called before the first frame update
     void Start()
@@ -19,3 +19,6 @@ public class ObstacleController : MonoBehaviour
         rb.velocity = new Vector2(-obstacleSpeed, rb.velocity.y);
     }
 }
+
+
+// NOT BEING USED ATM. USED EXPERIMENTALLY IN SCENE 2

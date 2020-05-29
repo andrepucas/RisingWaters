@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3865879087738003556}
   - component: {fileID: 6548258243340706244}
-  - component: {fileID: 2025999775212171496}
   - component: {fileID: -6183786628069760590}
   m_Layer: 0
   m_Name: wire_table_static
@@ -83,19 +82,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2025999775212171496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5461459653732255216}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64e1bd9b7f52f114a820e6122f0f7a7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
 --- !u!61 &-6183786628069760590
 BoxCollider2D:
   m_ObjectHideFlags: 0

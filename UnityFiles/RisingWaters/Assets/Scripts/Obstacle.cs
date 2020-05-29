@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    public int damage = 1;
+    private PlayerController player;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        player = FindObjectOfType<PlayerController>();
+    } 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Player hits an obstacle
         if (collision.CompareTag("Player"))
         {
-            // Player takes damage
-            collision.GetComponent<PlayerController>().health -= damage;
-            Debug.Log(collision.GetComponent<PlayerController>().health);
+            // Loses 1HP and slows down.
+            player.health   -= 1;
+            player.moveSpeed = player.speedInitial;
+
+            Debug.Log($"Slowed Down. Health = {player.health}");
         }
     }
 }

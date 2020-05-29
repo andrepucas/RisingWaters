@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6389466500701107055}
   - component: {fileID: 1038519154468635070}
-  - component: {fileID: 3002063786680590346}
   - component: {fileID: -632179078072100847}
   m_Layer: 0
   m_Name: wire_lamp
@@ -83,19 +82,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3002063786680590346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6621539580630088900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64e1bd9b7f52f114a820e6122f0f7a7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
 --- !u!61 &-632179078072100847
 BoxCollider2D:
   m_ObjectHideFlags: 0

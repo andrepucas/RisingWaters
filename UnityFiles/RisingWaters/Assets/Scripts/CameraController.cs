@@ -5,7 +5,6 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     private PlayerController player;
-    private Camera camera;
 
     // X, Y and Z positions of the player on the Update method
     private Vector3 lastPlayerPosition;
@@ -29,10 +28,5 @@ public class CameraController : MonoBehaviour
         transform.position = new Vector3(transform.position.x + distanceToMove, transform.position.y, transform.position.z);
 
         lastPlayerPosition = player.transform.position;
-
-        //if (player.health == 1)
-        //{
-        //    transform.position = new Vector3(transform.position.x + distanceToMove - distanceDecreased, transform.position.y, transform.position.z);
-        //}
     }
 }

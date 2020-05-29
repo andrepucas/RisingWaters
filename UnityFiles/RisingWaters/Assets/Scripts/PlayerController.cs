@@ -4,39 +4,36 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private Rigidbody2D rb;
-    private BoxCollider2D collider;
-    private SpriteRenderer renderer;
-    private GameObject wave; 
-    
+    private Rigidbody2D   rb;
+    private BoxCollider2D hitbox;
 
     // Speed Variables
-
-    public float moveSpeed;
-    public float speedInitial;
-    public float speedTerminal;
-    public float speedMultiplier;
-
+    [SerializeField] private float speedMultiplier = 1.0003f;
+                     public  float moveSpeed;
+                     public  float speedInitial;
+                     public  float speedTerminal;
 
     // Determines the force of your jump in the Y axis
-    public float jumpForce;
+    [SerializeField] private float jumpForce = 170;
 
-    // Variables to check if the player is grounded to prevent multiple jumpings
-    public LayerMask whatIsGround;
-    public bool isGrounded;
+    // Variables to check if the player is grounded to prevent multiple jumps
+    [SerializeField] private LayerMask whatIsGround;
+    [SerializeField] private bool      isGrounded;
 
-    // Health Variable
-    public int health = 2;
+    // Health Variables
+    [SerializeField]  private int initialHealth = 2;
+    [HideInInspector] public  int health;
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        collider = GetComponent<BoxCollider2D>();
-        renderer = GetComponent<SpriteRenderer>();
-        wave = GameObject.FindWithTag("Wave");
+        rb     = GetComponent<Rigidbody2D>();
+        hitbox = GetComponent<BoxCollider2D>();
+        health = initialHealth;
+        whatIsGround = LayerMask.GetMask("Ground");
     }
 
+    // Update is called once per frame
     private void Update()
     {
         PlayerMovement();
@@ -44,12 +41,12 @@ public class PlayerController : MonoBehaviour
         // Player dies
         if (health == 0)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
     public void PlayerMovement()
     {
-        isGrounded = Physics2D.IsTouchingLayers(collider, whatIsGround);
+        isGrounded = Physics2D.IsTouchingLayers(hitbox, whatIsGround);
 
         // Jump movement
         rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
@@ -57,13 +54,14 @@ public class PlayerController : MonoBehaviour
         // Jump movement inputs
         if (Input.GetKey(KeyCode.Space) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
+            // Jump limitations
             if (isGrounded)
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             }
         }
 
-        // "Slide"
+        // Crouch
         if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
             transform.Rotate(0.0f, 0.0f, -70f);
@@ -79,28 +77,12 @@ public class PlayerController : MonoBehaviour
             // Increases the moveSpeed variable
             moveSpeed = moveSpeed * speedMultiplier;
             
-            // Cant get over the terminal speed
-            if (moveSpeed > speedTerminal)
+            // Terminal speed reached
+            if (moveSpeed >= speedTerminal)
             {
                 moveSpeed = speedTerminal;
+                health    = initialHealth;
             }
-        }
-
-        // Wave leaves screen
-        if (moveSpeed == speedTerminal)
-        {
-            wave.transform.position = wave.transform.position + new Vector3(-20f * Time.deltaTime, 0.0f, 0.0f);
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Obstacle"))
-        {
-            // Player slows down
-            moveSpeed = speedInitial;
-
-            Debug.Log("Slowed Down.");
         }
     }
 }
