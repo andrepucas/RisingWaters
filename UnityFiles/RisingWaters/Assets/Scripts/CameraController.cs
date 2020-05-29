@@ -11,8 +11,6 @@ public class CameraController : MonoBehaviour
     private Vector3 lastPlayerPosition;
 
     private float distanceToMove;
-
-    public float distanceDecreased;
     
     // Start is called before the first frame update
     void Start()

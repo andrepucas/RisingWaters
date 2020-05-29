@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private BoxCollider2D collider;
     private SpriteRenderer renderer;
+    private GameObject wave; 
     
 
     // Speed Variables
@@ -33,6 +34,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         collider = GetComponent<BoxCollider2D>();
         renderer = GetComponent<SpriteRenderer>();
+        wave = GameObject.FindWithTag("Wave");
     }
 
     private void Update()
@@ -76,15 +78,27 @@ public class PlayerController : MonoBehaviour
         {
             // Increases the moveSpeed variable
             moveSpeed = moveSpeed * speedMultiplier;
+            
+            // Cant get over the terminal speed
+            if (moveSpeed > speedTerminal)
+            {
+                moveSpeed = speedTerminal;
+            }
         }
 
+        // Wave leaves screen
+        if (moveSpeed == speedTerminal)
+        {
+            wave.transform.position = wave.transform.position + new Vector3(-20f * 2 * Time.deltaTime, 0.0f, 0.0f);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Obstacle"))
         {
-            // Player takes damage
+            // Player slows down
             moveSpeed = speedInitial;
+
             Debug.Log("Slowed Down.");
         }
     }
