@@ -11,11 +11,11 @@
 |06        |         ""            |Água C2                |""                     |
 |07        |Testing                |Objetos                |Programação Água       |
 |08 (Slice)|Balanceamento          |Finishers              |""                     |
-|09        |Definição de menus     |Menus                  |Botões                 |
-|10        |Testing                |""                     |""                     |
-|11        |Balanceamento          |Logótipo               |Fix last bugs          |
-|12        |Testing                |Finishers              |""                     |
-|13 (Final)|Balanceamento          |""                     |Finishers              |
+|09        |Som e música           |Arte Personagem        |Botões                 |
+|10        |Layout do Menu         |Arte Água              |""                     |
+|11        |Balanceamento          |Obstáculos             |Fix last bugs          |
+|12        |Testing                |Finishes               |""                     |
+|13 (Final)|Balanceamento          |Logótipo               |Finishes               |
 
 </br>
 
