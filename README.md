@@ -12,20 +12,23 @@ Rui Vilar - 21902960
 - [__Rising Waters__](#rising-waters)
   - [__Game Design Document__](#game-design-document)
   - [__Table of Contents__](#table-of-contents)
+  - [__History__](#history)
   - [__Movie Synopsis__](#movie-synopsis)
   - [__What We Want Out of The Movie__](#what-we-want-out-of-the-movie)
-  - [__History__](#history)
+  - [__History__](#history-1)
   - [__Mechanics__](#mechanics)
-    - [__First Half of the game__](#first-half-of-the-game)
-    - [__Second Half of the game__](#second-half-of-the-game)
+    - [__Story Mode__](#story-mode)
+    - [__Arcade Mode__](#arcade-mode)
   - [__Game Objectives__](#game-objectives)
-  - [__Game "World"__](#game-%22world%22)
+  - [__Game "World"__](#game-world)
   - [__Game Agents__](#game-agents)
   - [__Types of Obstacles__](#types-of-obstacles)
   - [__Means of Storytelling__](#means-of-storytelling)
   - [__Art__](#art)
     - [__Cutscene__](#cutscene)
     - [__Hallway__](#hallway)
+
+## __History__
 
 ## __Movie Synopsis__
 
@@ -53,44 +56,39 @@ You get to your room and start to rest when suddenly you feel the ship shaking
 
 ## __Mechanics__
 
-### __First Half of the game__
+### __Story Mode__
 
 - __Jump__ -> [W], [Up Key] or [Space];
-- __Crouch__ -> [S], [Down Key] or [Control];  
+- __Roll__ -> [S], [Down Key] or [Control];  
 </br>
 In this part of the game the player is running through the hallways in order to
- escape the water. He has to jump or crouch to avoid the obstacles he faces
+ escape the water. He has to jump or roll to avoid the obstacles he faces
  otherwise he will slow down and get consumed by the wave of water behind him.
  As the player goes up the stairs onto the next hallway the ship's leaning
  gets progressively wider.
   
-### __Second Half of the game__
+### __Arcade Mode__
 
-- __Move Left or Right__ -> [A] or [D], [Left Key] or [Right Key] ;  
-- __Jump__ -> [W], [Up Key] or [Space];  
+- __Jump__ -> [W], [Up Key] or [Space];
+- __Roll__ -> [S], [Down Key] or [Control]  
 </br>
-In this second half of the game the player is on top of a table that is
- floating on the water. The player has to dodge falling debris and use them to
- stay floating. Each time a debris fall on the water it only floats for a
- limited time (the starting door included). This way he will be able to stay
- a float.
+The Arcade Mode will be similar to the story mode however, it won't end until
+ the player dies. In this mode there will be a scoring system and power-ups.
 
 ## __Game Objectives__  
 
 - __First Half__ -> Escape from the water while avoiding various obstacles;
-- __Second Half__ -> Use the rising water to get to the other side of the ship
- without getting hit by de debris;
+- __Second Half__ -> Escape from the water while avoiding various obstacles for
+ as long as you can;
 
 ## __Game "World"__
 
-During the **first half** of the game Arthur is running through hallways trying
- to escape the water that is flooding the ship. Then he gets hit with a table
-  in the face and is knocked unconscious.  
-</br>
-During the **second half** he wakes up on top of a table floating on the water,
- the ship now is fully sideways and the water is quickly rising. Arthur uses
- the falling debris to stay on top of the water and to try to escape from the
- ship.
+During the **story mode**  Arthur is running through hallways trying to escape
+ the water that is flooding the ship. This ends when he reaches the opposite
+ side of the ship.  
+
+ During the **arcade mode** the same happens however Arthur never reaches his
+ goal and runs forever.
 
 ## __Game Agents__
 
@@ -105,17 +103,14 @@ During the **second half** he wakes up on top of a table floating on the water,
 - __The Water__ -> The player has to avoid getting overtaken by the water at all
  costs otherwise he will drown.
   
-- __The table and Stick__ -> This is what the player uses to be able to be on
- top of the water and get to the other side of the ship.
-  
 ## __Types of Obstacles__
 
-- __Table__ -> To pass this obstacle the player has to crawl under or jump over.
+- __Table__ -> To pass this obstacle the player has to jump over.
 
-- __Room-cleaning cart__ -> To pass this object the player has to jump over the
- cart.
+- __Small Table__ -> To pass this object the player has to jump over the
+ table.
 
-- __Broken Lamp__ -> To pass this obstacle the player has to crawl under this
+- __Broken Lamp__ -> To pass this obstacle the player has to roll under this
  lamp
 
 ## __Means of Storytelling__
@@ -123,7 +118,6 @@ During the **second half** he wakes up on top of a table floating on the water,
 In this game we will use cutscenes for when the player isn't controlling our
  main character. For example, when Arthur is going up floors, at the beginning
  and at the end of the game or when Arthur gets hit by a door.
-
 ## __Art__
 
 ### __Cutscene__
