@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private BoxCollider2D hitbox;
 
     // Speed Variables
-    [SerializeField] private float speedMultiplier = 1.0003f;
+    [SerializeField] private float speedMultiplier = 50.02f;
                      public  float moveSpeed;
                      public  float speedInitial;
                      public  float speedTerminal;
@@ -34,16 +35,16 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void Update()
+    void Update()
     {
         PlayerMovement();
-
-        // Player dies
-        if (health == 0)
-        {
-            gameObject.SetActive(false);
-        }
     }
+
+    void FixedUpdate()
+    {
+        PlayerSpeed();
+    }
+
     public void PlayerMovement()
     {
         isGrounded = Physics2D.IsTouchingLayers(hitbox, whatIsGround);
@@ -70,12 +71,15 @@ public class PlayerController : MonoBehaviour
         {
             transform.Rotate(0.0f, 0.0f, 70f);
         }
+    }
 
+    public void PlayerSpeed()
+    {
         // Increases movement speed
         if (moveSpeed < speedTerminal)
         {
             // Increases the moveSpeed variable
-            moveSpeed = moveSpeed * speedMultiplier;
+            moveSpeed = moveSpeed * speedMultiplier * Time.fixedDeltaTime;
             
             // Terminal speed reached
             if (moveSpeed >= speedTerminal)
@@ -84,5 +88,17 @@ public class PlayerController : MonoBehaviour
                 health    = initialHealth;
             }
         }
+    }
+
+
+    // Called in Obstacle, wait 3 seconds after death and returns to menu
+    public IEnumerator PlayerDeath()
+    {
+        gameObject.SetActive(false);
+        
+        yield return new WaitForSeconds(3f);
+        Debug.Log("Time waited.");
+
+        SceneManager.LoadScene("MainMenu");
     }
 }

@@ -34,7 +34,7 @@ public class WaveController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // Updates wavePosition Vector with the current position of the wave
         wavePosition = wave.transform.localPosition;
@@ -55,14 +55,14 @@ public class WaveController : MonoBehaviour
             // On screen, behind the player
             if (player.health > 0)
             {
-                wave.transform.localPosition = Vector3.MoveTowards(wavePosition, inCamera, (waveSpeedIn * Time.deltaTime));
+                wave.transform.localPosition = Vector3.MoveTowards(wavePosition, inCamera, (waveSpeedIn * Time.fixedDeltaTime));
             }
 
             // On screen, over player
             if (player.health == 0)
             {
                 waveSpeedFinal = player.moveSpeed;
-                wave.transform.localPosition = Vector3.MoveTowards(wavePosition, playerPosition, (waveSpeedFinal * Time.deltaTime));
+                wave.transform.localPosition = Vector3.MoveTowards(wavePosition, playerPosition, (waveSpeedFinal * Time.fixedDeltaTime));
             }
 
         }
@@ -70,7 +70,7 @@ public class WaveController : MonoBehaviour
         // Off screen 
         else
         {
-            wave.transform.localPosition = Vector3.MoveTowards(wavePosition, offCamera, (waveSpeedOut * Time.deltaTime));
+            wave.transform.localPosition = Vector3.MoveTowards(wavePosition, offCamera, (waveSpeedOut * Time.fixedDeltaTime));
         }
     }
 }

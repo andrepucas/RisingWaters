@@ -23,5 +23,11 @@ public class Obstacle : MonoBehaviour
 
             Debug.Log($"Slowed Down. Health = {player.health}");
         }
+
+        // Player dies
+        if (player.health == 0)
+        {
+            StartCoroutine(player.PlayerDeath());
+        }
     }
 }

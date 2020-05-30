@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Obstacle
   - Wave
+  - EndLevel
   layers:
   - Default
   - TransparentFX
