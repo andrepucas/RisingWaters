@@ -1369,25 +1369,25 @@ Transform:
   - {fileID: 378202935}
   - {fileID: 2073271492}
   - {fileID: 1277394017}
+  - {fileID: 729924826}
+  - {fileID: 333893497}
   - {fileID: 33857592}
   - {fileID: 2043733158}
-  - {fileID: 333893497}
+  - {fileID: 1735784804}
   - {fileID: 1708823964}
   - {fileID: 882376273}
   - {fileID: 1103065077}
   - {fileID: 2044810327}
   - {fileID: 271999843}
   - {fileID: 459523652}
-  - {fileID: 729924826}
-  - {fileID: 1735784804}
   - {fileID: 1189563647}
-  - {fileID: 1605851729}
-  - {fileID: 554576153}
   - {fileID: 514132597}
+  - {fileID: 1605851729}
+  - {fileID: 2118583301}
+  - {fileID: 554576153}
   - {fileID: 1422299589}
   - {fileID: 630918867}
   - {fileID: 233056744}
-  - {fileID: 2118583301}
   - {fileID: 2045320707}
   - {fileID: 886696706}
   - {fileID: 49120481}
@@ -2460,7 +2460,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 310815520}
-  m_RootOrder: 31
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &514132598
 SpriteRenderer:
@@ -3397,7 +3397,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 310815520}
-  m_RootOrder: 26
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &729924827
 SpriteRenderer:
@@ -4900,7 +4900,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1031947516}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6855.9, y: -5, z: 1286.6135}
+  m_LocalPosition: {x: 6716.2, y: -5, z: 1286.6135}
   m_LocalScale: {x: 10, y: 70, z: 1}
   m_Children: []
   m_Father: {fileID: 424714958}
@@ -7851,7 +7851,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 310815520}
-  m_RootOrder: 27
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1735784805
 SpriteRenderer:
@@ -9196,7 +9196,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 310815520}
-  m_RootOrder: 35
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2118583302
 SpriteRenderer:
