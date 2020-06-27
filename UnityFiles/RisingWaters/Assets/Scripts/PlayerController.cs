@@ -7,29 +7,35 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D   rb;
     private BoxCollider2D hitbox;
+    private Animator anim;
 
     // Speed Variables
-    [SerializeField] private float speedMultiplier = 50.02f;
-                     public  float moveSpeed;
-                     public  float speedInitial;
-                     public  float speedTerminal;
+    [SerializeField]  private float speedMultiplier = 50.02f;
+                      public  float moveSpeed;
+                      public  float speedInitial;
+                      public  float speedTerminal;
 
     // Determines the force of your jump in the Y axis
-    [SerializeField] private float jumpForce = 170;
+    [SerializeField]  private float jumpForce = 170;
 
     // Variables to check if the player is grounded to prevent multiple jumps
-    [SerializeField] private LayerMask whatIsGround;
-    [SerializeField] private bool      isGrounded;
+    [SerializeField]  private LayerMask whatIsGround;
+    [SerializeField]  private bool      isGrounded;
 
     // Health Variables
     [SerializeField]  private int initialHealth = 2;
     [HideInInspector] public  int health;
+
+    // Animator variables
+    private int groundedHash = Animator.StringToHash("isGrounded");
+    private int jumpHash = Animator.StringToHash("Jump");
 
     // Start is called before the first frame update
     void Start()
     {
         rb     = GetComponent<Rigidbody2D>();
         hitbox = GetComponent<BoxCollider2D>();
+        anim   = GetComponent<Animator>();
         health = initialHealth;
         whatIsGround = LayerMask.GetMask("Ground");
     }
@@ -48,6 +54,7 @@ public class PlayerController : MonoBehaviour
     public void PlayerMovement()
     {
         isGrounded = Physics2D.IsTouchingLayers(hitbox, whatIsGround);
+        anim.SetBool(groundedHash, isGrounded);
 
         // Jump movement
         rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
@@ -59,6 +66,7 @@ public class PlayerController : MonoBehaviour
             if (isGrounded)
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                anim.SetTrigger(jumpHash);
             }
         }
 
