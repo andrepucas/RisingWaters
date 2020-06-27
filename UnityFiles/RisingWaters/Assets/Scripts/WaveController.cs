@@ -17,8 +17,8 @@ public class WaveController : MonoBehaviour
     private bool isVisible;
 
     // Velocity of the wave moving in or out of the screen
-    [SerializeField] private float waveSpeedOut = 10f;
-    [SerializeField] private float waveSpeedIn = 20f;
+    [SerializeField] private float waveSpeedOut = 50f;
+    [SerializeField] private float waveSpeedIn = 90f;
                      private float waveSpeedFinal;
 
     // Start is called before the first frame update
@@ -28,9 +28,9 @@ public class WaveController : MonoBehaviour
         wave = GameObject.FindWithTag("Wave");
 
         // Positions relative to the Main Camera
-        inCamera        = new Vector3 (-310, -7.8f, 10);
-        offCamera       = new Vector3 (-330, -7.8f, 10);
-        playerPosition  = new Vector3 (0, -7.8f, 10);
+        inCamera        = new Vector3 (-340, 0, 10);
+        offCamera       = new Vector3 (-445, 0, 10);
+        playerPosition  = new Vector3 (150, 0, 10);
     }
 
     // Update is called once per frame
