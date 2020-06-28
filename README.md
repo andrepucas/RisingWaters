@@ -63,10 +63,9 @@ You get to your room and start to rest when suddenly you feel the ship shaking
 - __Pause__ -> [ESC];  
 </br>
 In this part of the game the player is running through the hallways in order to
- escape the water. He has to jump or roll to avoid the obstacles he faces
+ escape the water. He has to jump or duck to avoid the obstacles he faces
  otherwise he will slow down and get consumed by the wave of water behind him.
- As the player goes up the stairs onto the next hallway the ship's leaning
- gets progressively wider.
+
   
 ### __Arcade Mode__
 
@@ -75,7 +74,7 @@ In this part of the game the player is running through the hallways in order to
 - __Pause__ -> [ESC];  
 </br>
 The Arcade Mode will be similar to the story mode however, it won't end until
- the player dies. In this mode there will be a scoring system and power-ups.
+ the player dies.
 
 ## __Game Objectives__  
 
@@ -99,7 +98,7 @@ During the **story mode**  Arthur is running through hallways trying to escape
 - __Various types of debris__ -> These are all types of objects that can fall on
  the player and slow him down. For example, chairs, lamps...etc.
   
-- __Obstacles__ -> Which the player has to jump over or slide under so he
+- __Obstacles__ -> Which the player has to jump over or duck under so he
  doesn't hit them and slow down.
 
 - __The Water__ -> The player has to avoid getting overtaken by the water at all
@@ -118,7 +117,8 @@ During the **story mode**  Arthur is running through hallways trying to escape
 
 In this game we will use cutscenes for when the player isn't controlling our
  main character. For example, when Arthur is going up floors, at the beginning
- and at the end of the game or when Arthur gets hit by a door.
+ of the game.
+
 ## __Art__
 
 ### __Cutscene__
