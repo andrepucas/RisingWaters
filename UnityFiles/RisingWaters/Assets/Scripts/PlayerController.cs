@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    private MainMenu menu;
+
     private Rigidbody2D   rb;
     private BoxCollider2D hitbox;
     private Animator anim;
@@ -41,13 +43,15 @@ public class PlayerController : MonoBehaviour
         anim   = GetComponent<Animator>();
         health = initialHealth;
         whatIsGround = LayerMask.GetMask("Ground");
+
+
+        menu = FindObjectOfType<MainMenu>();
     }
 
     // Update is called once per frame
     void Update()
     {
         PlayerMovement();
-        PauseMenu();
     }
 
     void FixedUpdate()
@@ -127,13 +131,4 @@ public class PlayerController : MonoBehaviour
 
         SceneManager.LoadScene("GameOver");
     }
-
-    public void PauseMenu()
-    {
-        if(Input.GetKey(KeyCode.P))
-        {
-            SceneManager.LoadScene("PauseMenu");
-        }
-    }
-
 }

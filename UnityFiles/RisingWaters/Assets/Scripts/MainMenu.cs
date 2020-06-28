@@ -5,16 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-
-    int sceneIndex;
+    public int sceneIndex;
     private PlayerController player;
 
     public void Start()
     {
-        sceneIndex = SceneManager.GetActiveScene().buildIndex;
         player = FindObjectOfType<PlayerController>();
+        sceneIndex = SceneManager.GetActiveScene().buildIndex;
     }
-
 
     public void PlayGame()
     {
@@ -46,9 +44,16 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
+    public void Back()
+    {
+        SceneManager.LoadScene(sceneIndex - 1);
+    }
+    
+
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene(sceneIndex + 1);
+        sceneIndex += 1;
+        SceneManager.LoadScene(sceneIndex);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -58,5 +63,18 @@ public class MainMenu : MonoBehaviour
         {
             LoadNextLevel();
         }
+    }
+
+
+    //public void GameOver()
+    //{
+    //    //Scene deathScene = SceneManager.GetActiveScene();
+        
+    //    SceneManager.LoadScene("GameOver");
+    //}
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(sceneIndex);
     }
 }

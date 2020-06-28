@@ -1960,7 +1960,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 183.9
+  m_fontSize: 183
   m_fontSizeBase: 0
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2205,7 +2205,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2020489356}
-        m_MethodName: QuitGame
+        m_MethodName: MenuMain
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
