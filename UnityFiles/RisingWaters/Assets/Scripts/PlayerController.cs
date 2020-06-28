@@ -26,9 +26,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField]  private int initialHealth = 2;
     [HideInInspector] public  int health;
 
-    // Animator variables
+    // Animator variables - hashIDs
     private int groundedHash = Animator.StringToHash("isGrounded");
-    private int jumpHash = Animator.StringToHash("Jump");
+    private int jumpHash     = Animator.StringToHash("Jump");
+    private int crouchHash   = Animator.StringToHash("Crouch");
+    private int runHash      = Animator.StringToHash("Run");
+    private int hurtHash     = Animator.StringToHash("Hurt");
 
     // Start is called before the first frame update
     void Start()
@@ -73,11 +76,11 @@ public class PlayerController : MonoBehaviour
         // Crouch
         if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
-            transform.Rotate(0.0f, 0.0f, -70f);
+            anim.SetTrigger(crouchHash);
         }
         if (Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow))
         {
-            transform.Rotate(0.0f, 0.0f, 70f);
+            anim.SetTrigger(runHash);
         }
     }
 
@@ -98,8 +101,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Player hits an obstacle
+        if (collision.CompareTag("Obstacle"))
+        {
+            anim.SetTrigger(hurtHash);
+        }
+    }
 
-    // Called in Obstacle, wait 3 seconds after death and returns to menu
+    // Waits 2 seconds after death and returns to menu
     public IEnumerator PlayerDeath()
     {
         gameObject.SetActive(false);
