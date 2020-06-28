@@ -1,0 +1,21 @@
+﻿using UnityEngine;
+using UnityEngine.Audio;
+
+[System.Serializable]
+public class Audio
+{
+   public string name;
+   
+   public AudioClip clip;
+
+   [Range(0f, 1f)]
+   public float volume;
+
+   public bool loop;
+
+    [Range(0f, 1f)]
+    public float spatialBlend;
+
+   [HideInInspector]
+   public AudioSource source;
+}

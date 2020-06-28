@@ -64,7 +64,6 @@ public class WaveController : MonoBehaviour
                 waveSpeedFinal = player.moveSpeed;
                 wave.transform.localPosition = Vector3.MoveTowards(wavePosition, playerPosition, (waveSpeedFinal * Time.fixedDeltaTime));
             }
-
         }
 
         // Off screen 
