@@ -39,9 +39,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
-    public void Creddits()
+    public void Credits()
     {
-        SceneManager.LoadScene("Creddits");
+        SceneManager.LoadScene("Credits");
     }
 
     public void QuitGame()
