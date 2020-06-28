@@ -12,12 +12,12 @@ public class Generator : MonoBehaviour
     public Transform generationPoint;
     private float platformWidth;
 
-    // Obstacules Generator
+    // Table Generator
     public float randomTableThreshold;
-    //public ObjectPooler tablePool;
+    public ObjectPooler tablePool;
 
 
-
+    // ObjectPooler GameObject
     public ObjectPooler theObjectPool;
 
 
@@ -43,15 +43,15 @@ public class Generator : MonoBehaviour
 
         }
 
-        //if(Random.Range(0f,100f) < randomTableThreshold)
-        //{
-        //    GameObject newtable = tablePool.GetPooledObject();
+        if (Random.Range(0f, 100f) < randomTableThreshold)
+        {
+            GameObject newtable = tablePool.GetPooledObject();
 
-        //    Vector3 tablePosition =
+            Vector3 tablePosition = new Vector3(0f, -28f, 0f);
 
-        //    newtable.transform.position = transform.position;
-        //    newtable.transform.rotation = transform.rotation;
-        //    newtable.SetActive(true);
-        //}
+            newtable.transform.position = transform.position + tablePosition;
+            newtable.transform.rotation = transform.rotation;
+            newtable.SetActive(true);
+        }
     }
 }

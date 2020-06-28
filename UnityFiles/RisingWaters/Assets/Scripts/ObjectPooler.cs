@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ObjectPooler : MonoBehaviour
 {
-    public GameObject pooledObject;
+    public GameObject[] pooledObject;
 
     public int pooledAmount;
 
@@ -16,9 +16,11 @@ public class ObjectPooler : MonoBehaviour
     {
         pooledObjects = new List<GameObject>();
 
-        for(int i = 0; i < pooledAmount; i++)
+        int obstacle = Random.Range(0, pooledObject.Length);
+        for (int i = 0; i < pooledAmount; i++)
         {
-            GameObject obj = (GameObject)Instantiate(pooledObject);
+            //GameObject obj = (GameObject)Instantiate(pooledObject);
+            GameObject obj = (GameObject)Instantiate(pooledObject[obstacle], transform.position, transform.rotation);
             obj.SetActive(false);
             pooledObjects.Add(obj);
         }
@@ -26,14 +28,17 @@ public class ObjectPooler : MonoBehaviour
 
     public GameObject GetPooledObject()
     {
-        for(int i = 0; i < pooledObjects.Count; i++)
+        int obstacle = Random.Range(0, pooledObject.Length);
+        for (int i = 0; i < pooledObjects.Count; i++)
         {
             if (!pooledObjects[i].activeInHierarchy)
             {
                 return pooledObjects[i];
             }
         }
-        GameObject obj = (GameObject)Instantiate(pooledObject);
+
+        GameObject obj = (GameObject)Instantiate(pooledObject[obstacle], transform.position, transform.rotation);
+        //GameObject obj = (GameObject)Instantiate(pooledObject);
         obj.SetActive(false);
         pooledObjects.Add(obj);
         return obj;
