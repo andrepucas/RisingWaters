@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public  int health;
 
     // Animator variables - hashIDs
-    private int groundedHash = Animator.StringToHash("isGrounded");
+    private int groundedHash = Animator.StringToHash("Grounded");
     private int jumpHash     = Animator.StringToHash("Jump");
     private int crouchHash   = Animator.StringToHash("Crouch");
     private int runHash      = Animator.StringToHash("Run");
@@ -76,11 +76,14 @@ public class PlayerController : MonoBehaviour
         // Crouch
         if (Input.GetKeyDown(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
-            anim.SetTrigger(crouchHash);
+            anim.SetBool(crouchHash, true);
         }
-        if (Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow))
+
+        // Leaving crouched state
+        if (Input.GetKeyUp(KeyCode.LeftControl) || Input.GetKeyUp(KeyCode.S) || Input.GetKeyUp(KeyCode.DownArrow)
+        || anim.GetCurrentAnimatorStateInfo(0).IsName("PlayerHurt"))
         {
-            anim.SetTrigger(runHash);
+            anim.SetBool(crouchHash, false);
         }
     }
 
