@@ -22,7 +22,7 @@ public class EndLevel : MonoBehaviour
         {
             menu.sceneIndex += 1;
             player.gameObject.SetActive(false);
-            SceneManager.LoadScene("MainMenu");
+            SceneManager.LoadScene(menu.sceneIndex);
         }
     }
 }
