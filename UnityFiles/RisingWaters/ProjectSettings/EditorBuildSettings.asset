@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/SettingsMenu.unity
     guid: b3a50c66d310cd8469e5f0342ef4c7ca
   - enabled: 1
-    path: Assets/Scenes/Creddits.unity
+    path: Assets/Scenes/Credits.unity
     guid: 611f166fa1841ab479773b54eb2e2dd4
   - enabled: 1
     path: Assets/Scenes/ArcadeMsg.unity
