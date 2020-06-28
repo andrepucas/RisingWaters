@@ -49,7 +49,10 @@ public class AudioManager : MonoBehaviour
             Debug.Log("Sound: " + name + " not found");
             return;
         }
-        
+        //if (PauseMenu.GameIsPaused)
+        //{
+        //    GetComponent<AudioSource>().mute;
+        //}
         // Doesnt allow the same sound to be played on top of itself
         if (!s.source.isPlaying)
         {

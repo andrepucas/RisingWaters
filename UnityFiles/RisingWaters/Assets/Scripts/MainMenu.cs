@@ -5,6 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+
+    int sceneIndex;
+    private PlayerController player;
+
+    public void Start()
+    {
+        sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        player = FindObjectOfType<PlayerController>();
+    }
+
+
     public void PlayGame()
     {
         SceneManager.LoadScene("Level_1");
@@ -33,5 +44,19 @@ public class MainMenu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void LoadNextLevel()
+    {
+        SceneManager.LoadScene(sceneIndex + 1);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Player hits an obstacle
+        if (collision.CompareTag("Player"))
+        {
+            LoadNextLevel();
+        }
     }
 }
