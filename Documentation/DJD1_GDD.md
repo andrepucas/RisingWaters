@@ -70,7 +70,6 @@ You get to your room and start to rest when suddenly you feel the ship shaking
 In this part of the game the player is running through the hallways in order to
  escape the water. He has to jump or duck to avoid the obstacles he faces
  otherwise he will slow down and get consumed by the wave of water behind him.
-
   
 ### __Arcade Mode__
 

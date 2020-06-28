@@ -9,7 +9,7 @@ O que correu bem e até nos salvou algumas vezes foi a nossa utilização do git
 ### O que correu mal?
 No nosso projeto o que correu mal foi a parte de programar o "Arcade Mode",
  foram surgindo vários problemas e acabamos por ficar um pouco sobrecarregados
-  mais para o final. 
+  mais para o final.
 
 ### O que podíamos ter feito melhor?
 Nós se calhar podíamos ter dedicado mais atenção à parte da programação quando
