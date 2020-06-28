@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         PlayerMovement();
+        PauseMenu();
     }
 
     void FixedUpdate()
@@ -123,4 +124,13 @@ public class PlayerController : MonoBehaviour
 
         SceneManager.LoadScene("GameOver");
     }
+
+    public void PauseMenu()
+    {
+        if(Input.GetKey(KeyCode.P))
+        {
+            SceneManager.LoadScene("PauseMenu");
+        }
+    }
+
 }
