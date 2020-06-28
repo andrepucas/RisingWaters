@@ -71,7 +71,8 @@ public class PlayerController : MonoBehaviour
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
                 anim.SetTrigger(jumpHash);
-                FindObjectOfType<AudioManager>().Play("Jump", 0.5f);
+                FindObjectOfType<AudioManager>().Play("Jump");
+                return;
             }
         }
 
@@ -112,7 +113,7 @@ public class PlayerController : MonoBehaviour
         if (collision.CompareTag("Obstacle"))
         {
             anim.SetTrigger(hurtHash);
-            FindObjectOfType<AudioManager>().Play("Hit", 0.5f);
+            FindObjectOfType<AudioManager>().Play("Hit");
         }
     }
 

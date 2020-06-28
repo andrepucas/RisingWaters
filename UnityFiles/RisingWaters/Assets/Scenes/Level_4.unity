@@ -540,7 +540,7 @@ Transform:
   - {fileID: 1783631404}
   - {fileID: 2411639}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &46457275 stripped
 Transform:
@@ -663,7 +663,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &85164164
 GameObject:
@@ -1849,7 +1849,7 @@ Transform:
   - {fileID: 1534827147}
   - {fileID: 856290156}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &287331803
 PrefabInstance:
@@ -2992,7 +2992,7 @@ PrefabInstance:
     - target: {fileID: 9001541541235547361, guid: 4f7aae9efb6e9bb43ac0e9925a13a791,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9001541541235547361, guid: 4f7aae9efb6e9bb43ac0e9925a13a791,
         type: 3}
@@ -3839,6 +3839,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1249949304}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &693851689
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7254079673738706840, guid: 4b306525dc3e68c449bdbc323946bc0d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254079673738706840, guid: 4b306525dc3e68c449bdbc323946bc0d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254079673738706840, guid: 4b306525dc3e68c449bdbc323946bc0d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254079673738706840, guid: 4b306525dc3e68c449bdbc323946bc0d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254079673738706840, guid: 4b306525dc3e68c449bdbc323946bc0d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254079673738706840, guid: 4b306525dc3e68c449bdbc323946bc0d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254079673738706840, guid: 4b306525dc3e68c449bdbc323946bc0d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254079673738706840, guid: 4b306525dc3e68c449bdbc323946bc0d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254079673738706840, guid: 4b306525dc3e68c449bdbc323946bc0d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254079673738706840, guid: 4b306525dc3e68c449bdbc323946bc0d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254079673738706840, guid: 4b306525dc3e68c449bdbc323946bc0d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7254079673738706842, guid: 4b306525dc3e68c449bdbc323946bc0d,
+        type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4b306525dc3e68c449bdbc323946bc0d, type: 3}
 --- !u!1 &698984610 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6621539580630088900, guid: d467c3efca7de844984be54cbfd9fe64,
@@ -5856,7 +5925,7 @@ PrefabInstance:
     - target: {fileID: 8024514014425088083, guid: 3d5ad354b7112da409ff2271af8864f0,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8024514014425088083, guid: 3d5ad354b7112da409ff2271af8864f0,
         type: 3}

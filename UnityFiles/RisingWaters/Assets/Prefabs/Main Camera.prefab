@@ -31,7 +31,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9001541541516687034}
-  - {fileID: 9001541541490139358}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -98,68 +97,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4e791c4331652d44ac1b9128d04857f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &9001541541490139359
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9001541541490139358}
-  - component: {fileID: 9001541541490139353}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9001541541490139358
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9001541541490139359}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 9001541541235547361}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9001541541490139353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9001541541490139359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ac56f6178e5477418dd14c231d5aeab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - name: Hit
-    clip: {fileID: 8300000, guid: bb5843d5526e934449f19f2e042d5512, type: 3}
-    volume: 0.5
-    loop: 0
-    spatialBlend: 0
-    source: {fileID: 0}
-  - name: Jump
-    clip: {fileID: 8300000, guid: 7c5074a05de44d74fb29dcb8f7129a91, type: 3}
-    volume: 0.5
-    loop: 0
-    spatialBlend: 0
-    source: {fileID: 0}
-  - name: Menu
-    clip: {fileID: 8300000, guid: 54852426087d2074da920b1cb837c055, type: 3}
-    volume: 0.5
-    loop: 0
-    spatialBlend: 0
-    source: {fileID: 0}
 --- !u!1 &9001541541516687035
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,18 +254,18 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 13384cb9b47a9964e93822612047ead2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.102
   m_Pitch: 1
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 170.203
-  MaxDistance: 471.3305
+  Priority: 0
+  DopplerLevel: 0
+  MinDistance: 237.87885
+  MaxDistance: 490.73758
   Pan2D: -1
-  rolloffMode: 1
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -360,8 +297,8 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 1
+      time: 0.009506226
+      value: 0.9999962
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -391,7 +328,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1.1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

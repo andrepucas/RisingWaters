@@ -28,12 +28,17 @@ public class AudioManager : MonoBehaviour
             s.source              = gameObject.AddComponent<AudioSource>();
             s.source.clip         = s.clip;
             s.source.volume       = s.volume;
-            s.source.spatialBlend = s.spatialBlend;
             s.source.loop         = s.loop;
+            s.source.dopplerLevel = 0f;
         }
     }
 
-    public void Play(string name, float volume)
+    void Start()
+    {
+        Play("Theme");
+    }
+
+    public void Play(string name)
     {
         Audio s = Array.Find(sounds, audio => audio.name == name);
         if (s == null)
@@ -41,7 +46,6 @@ public class AudioManager : MonoBehaviour
             Debug.Log("Sound: " + name + " not found");
             return;
         }
-        s.source.volume = volume;
         s.source.Play();
     }
 }
