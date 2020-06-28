@@ -26,6 +26,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("Endless");
     }
 
+    public void ArcadeMsg()
+    {
+        SceneManager.LoadScene("ArcadeMsg");
+    }
+
     public void SettingsMenu()
     {
         SceneManager.LoadScene("SettingsMenu");
