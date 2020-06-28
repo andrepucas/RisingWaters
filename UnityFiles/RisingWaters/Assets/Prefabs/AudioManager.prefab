@@ -51,7 +51,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Jump
     clip: {fileID: 8300000, guid: 7c5074a05de44d74fb29dcb8f7129a91, type: 3}
-    volume: 0.5
+    volume: 0.35
     loop: 0
     source: {fileID: 0}
   - name: Menu
@@ -61,6 +61,6 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Theme
     clip: {fileID: 8300000, guid: f9361a2520e8aea48a5162f83b486f56, type: 3}
-    volume: 0.05
+    volume: 0.08
     loop: 1
     source: {fileID: 0}
