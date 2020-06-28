@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
 {
     private MainMenu menu;
 
+    public bool isDead = false;
+
     private Rigidbody2D   rb;
     private BoxCollider2D hitbox;
     private Animator anim;
@@ -129,6 +131,9 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(3f);
         Debug.Log("Time waited.");
 
-        SceneManager.LoadScene("GameOver");
+        isDead = true;
+
+
+        //SceneManager.LoadScene("GameOver");
     }
 }

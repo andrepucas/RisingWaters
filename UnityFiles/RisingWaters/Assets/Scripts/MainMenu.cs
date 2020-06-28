@@ -57,8 +57,7 @@ public class MainMenu : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        sceneIndex += 1;
-        SceneManager.LoadScene(sceneIndex);
+        SceneManager.LoadScene(sceneIndex + 1);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
