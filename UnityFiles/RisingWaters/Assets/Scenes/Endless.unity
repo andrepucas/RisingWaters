@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173546293}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 548.0466}
+  m_LocalPosition: {x: 0, y: -21.527332, z: 548.0466}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1654265336}
@@ -331,7 +331,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742448773}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -330, y: 14, z: 10}
+  m_LocalPosition: {x: -330, y: -7.8, z: 10}
   m_LocalScale: {x: 84.48039, y: 15.840874, z: 1}
   m_Children: []
   m_Father: {fileID: 1874528777}
@@ -489,7 +489,7 @@ MonoBehaviour:
   thePlatform: {fileID: 7822131032011971739, guid: af16e56ca5b9a5e4a9d831eecde554ca,
     type: 3}
   generationPoint: {fileID: 1208615951}
-  randomTableThreshold: 1
+  randomTableThreshold: 0.5
   tablePool: {fileID: 1400158399}
   theObjectPool: {fileID: 1680283985}
 --- !u!4 &1322224582
@@ -535,8 +535,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee779907ffc5bc248a41627e8aec38f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pooledObject: {fileID: 133378399268985541, guid: a1dc9c5cf86469447b5692515ac6c8a9,
-    type: 3}
+  pooledObject:
+  - {fileID: 8214262674635130962, guid: 450fb131b7cd3e54b9a188b5cfa9f75a, type: 3}
+  - {fileID: 133378399268985541, guid: a1dc9c5cf86469447b5692515ac6c8a9, type: 3}
   pooledAmount: 4
 --- !u!4 &1400158400
 Transform:
@@ -753,7 +754,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1605002901}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 280, y: 0, z: 548.0466}
+  m_LocalPosition: {x: 280, y: -21.527332, z: 548.0466}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1654265336}
@@ -909,9 +910,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee779907ffc5bc248a41627e8aec38f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pooledObject: {fileID: 7822131032011971739, guid: af16e56ca5b9a5e4a9d831eecde554ca,
-    type: 3}
-  pooledAmount: 1
+  pooledObject:
+  - {fileID: 7822131032011971739, guid: af16e56ca5b9a5e4a9d831eecde554ca, type: 3}
+  pooledAmount: 10
 --- !u!4 &1680283986
 Transform:
   m_ObjectHideFlags: 0
