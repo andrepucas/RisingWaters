@@ -121,6 +121,6 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(3f);
         Debug.Log("Time waited.");
 
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("GameOver");
     }
 }

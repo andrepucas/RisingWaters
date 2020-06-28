@@ -7,7 +7,27 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene("Level_0");
+        SceneManager.LoadScene("Level_1");
+    }
+
+    public void PlayEndless()
+    {
+        SceneManager.LoadScene("Endless");
+    }
+
+    public void SettingsMenu()
+    {
+        SceneManager.LoadScene("SettingsMenu");
+    }
+
+    public void MenuMain()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void Creddits()
+    {
+        SceneManager.LoadScene("Creddits");
     }
 
     public void QuitGame()
