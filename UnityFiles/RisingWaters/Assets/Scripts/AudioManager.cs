@@ -8,9 +8,9 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager instance;
     
-    // Start is called before the first frame update
     void Awake()
     {
+        // Allows for the theme to be played across multiple scenes
         DontDestroyOnLoad(gameObject);
         
         if (instance == null)
@@ -23,6 +23,7 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
+        // Set audio source variables
         foreach (Audio s in sounds)
         {
             s.source              = gameObject.AddComponent<AudioSource>();
@@ -33,11 +34,13 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    // Theme song is playing throughout the whole game
     void Start()
     {
         Play("Theme");
     }
 
+    // Plays audio
     public void Play(string name)
     {
         Audio s = Array.Find(sounds, audio => audio.name == name);
@@ -46,6 +49,11 @@ public class AudioManager : MonoBehaviour
             Debug.Log("Sound: " + name + " not found");
             return;
         }
-        s.source.Play();
+        
+        // Doesnt allow the same sound to be played on top of itself
+        if (!s.source.isPlaying)
+        {
+            s.source.Play();
+        }
     }
 }
