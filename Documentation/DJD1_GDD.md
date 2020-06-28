@@ -64,7 +64,8 @@ You get to your room and start to rest when suddenly you feel the ship shaking
 ### __Story Mode__
 
 - __Jump__ -> [W], [Up Key] or [Space];
-- __Roll__ -> [S], [Down Key] or [Control];  
+- __Duck__ -> [S], [Down Key] or [Control];
+- __Pause__ -> [ESC];  
 </br>
 In this part of the game the player is running through the hallways in order to
  escape the water. He has to jump or roll to avoid the obstacles he faces
@@ -75,7 +76,8 @@ In this part of the game the player is running through the hallways in order to
 ### __Arcade Mode__
 
 - __Jump__ -> [W], [Up Key] or [Space];
-- __Roll__ -> [S], [Down Key] or [Control]  
+- __Duck__ -> [S], [Down Key] or [Control];
+- __Pause__ -> [ESC];  
 </br>
 The Arcade Mode will be similar to the story mode however, it won't end until
  the player dies. In this mode there will be a scoring system and power-ups.
@@ -102,7 +104,7 @@ During the **story mode**  Arthur is running through hallways trying to escape
 - __Various types of debris__ -> These are all types of objects that can fall on
  the player and slow him down. For example, chairs, lamps...etc.
   
-- __Obstacles__ -> Which the player has to jump over or slide under so he
+- __Obstacles__ -> Which the player has to jump over or duck under so he
  doesn't hit them and slow down.
 
 - __The Water__ -> The player has to avoid getting overtaken by the water at all
@@ -112,11 +114,9 @@ During the **story mode**  Arthur is running through hallways trying to escape
 
 - __Table__ -> To pass this obstacle the player has to jump over.
 
-- __Small Table__ -> To pass this object the player has to jump over the
- table.
+- __Small Table__ -> To pass this object the player has to jump over the table.
 
-- __Broken Lamp__ -> To pass this obstacle the player has to roll under this
- lamp
+- __Broken Lamp__ -> To pass this obstacle the player has to duck under this lamp.
 
 ## __Means of Storytelling__
 
@@ -131,16 +131,15 @@ In this game we will use cutscenes for when the player isn't controlling our
 For the initial cutscene we will have Arthur leave the room then the water
  rushes in through the hallway and he starts running.
 
-![Initial Cutscene](https://media.githubusercontent.com/media/andrepucas/RisingWaters/master/Art/Concepts/Intro/Intro.gif) "Initial Cutscene")
+![Initial Cutscene](https://media.githubusercontent.com/media/andrepucas/RisingWaters/working/Art/Concepts/Intro/Intro.gif "Initial Cutscene")
 
 ### __Hallway__
 
 This is the hallway that we are going to put on loop for the first part of the
- game. Has the player goes through the lights behind him turn off due to a
-power failure.
+ game. Has the player goes through he has to dodge various obstacles.
 
 ![Hallway](
-https://media.githubusercontent.com/media/andrepucas/RisingWaters/master/Art/Game/Hallway/going_dark.gif "Hallway")
+https://media.githubusercontent.com/media/andrepucas/RisingWaters/working/MiscStuff/GamePlay.png "Hallway")
 
 ## Change Log
 
@@ -148,3 +147,4 @@ https://media.githubusercontent.com/media/andrepucas/RisingWaters/master/Art/Gam
 |:--------:|:------------------------------------------------------------:|
 |15/05/2020|Added art, Change Log and made a few fixes                    |
 |30/05/2020|Made changes according to our decisions (Arcade mode, Rolling)|
+|28/06/2020|Made a few fixes and updated the information                  |
