@@ -139,7 +139,7 @@ This is the hallway that we are going to put on loop for the first part of the
 ![Hallway](
 https://media.githubusercontent.com/media/andrepucas/RisingWaters/working/MiscStuff/GamePlay.png "Hallway")
 
-## Change Log
+## __Change Log__
 
 |Date      |Changes                                                       |
 |:--------:|:------------------------------------------------------------:|
